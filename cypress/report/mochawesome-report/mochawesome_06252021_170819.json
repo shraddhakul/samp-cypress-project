@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-26T00:08:03.839Z",
+    "end": "2021-06-26T00:08:19.489Z",
+    "duration": 15650,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b07b7b03-b8a3-4bd9-abdc-0fde83450975",
+      "title": "",
+      "fullFile": "cypress/integration/peek_pro/pointOfSale.spec.js",
+      "file": "cypress/integration/peek_pro/pointOfSale.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5d6335d9-094d-47a5-b325-0d1ea95b2519",
+          "title": "peekpro-pointOfSale product",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "checks all elements and feautes on point of sale page",
+              "fullTitle": "peekpro-pointOfSale product checks all elements and feautes on point of sale page",
+              "timedOut": null,
+              "duration": 11262,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//visit peek pro page\ncy.visit('http://peek.com/pro'); //click on the produc Tour on the top nav\ncy.get('#menu-new-main-menu > #menu-item-17225 > a').click(); //check that user is taken on the product tour page\ncy.url().should('contain', 'pro/product-tour'); //User clicks on the learn more button of Point of sale prod\ncy.get('.et_pb_column_2 > .et_pb_code > .et_pb_code_inner > .pt-learn-more').click(); //check that user is correctly taken to point of sale page\ncy.url().should('contain', 'pro/product-tour/point-of-sale'); //verify that page displays POS specific features\ncy.get('.et_pb_column_7 > .et_pb_module > .et_pb_text_inner > h2').should('have.text', 'Optimized for Speed');\ncy.get('.et_pb_column_9 > .et_pb_module > .et_pb_text_inner > h2').should('have.text', 'See Availability At A Glance');\ncy.get('.et_pb_column_13 > .et_pb_module > .et_pb_text_inner > h2').should('have.text', 'Goes Anywhere');\ncy.get('.et_pb_column_31 > .et_pb_module > .et_pb_text_inner > h2').should('have.text', 'Ticket Printing');",
+              "err": {},
+              "uuid": "cb22825c-5b86-481a-ad4e-19922b5cd344",
+              "parentUUID": "5d6335d9-094d-47a5-b325-0d1ea95b2519",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cb22825c-5b86-481a-ad4e-19922b5cd344"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11262,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

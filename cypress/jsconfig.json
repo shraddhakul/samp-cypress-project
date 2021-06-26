@@ -1,0 +1,6 @@
+
+//This file allows Intelligent Code Completion and help for 
+//cy commands inside regular JavaScript spec files
+{
+    "include": ["./node_modules/cypress", "cypress/**/*.js"]
+  }

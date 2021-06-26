@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-26T00:07:40.854Z",
+    "end": "2021-06-26T00:07:53.346Z",
+    "duration": 12492,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d275e5c7-e91b-41e7-9d4b-18285128567d",
+      "title": "",
+      "fullFile": "cypress/integration/peek_pro/peek_pro.spec.js",
+      "file": "cypress/integration/peek_pro/peek_pro.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c3f0ec86-895c-44a5-abe4-7602af9d7bff",
+          "title": "Peek Pro Demo Request",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verifies user is taken to the demo form",
+              "fullTitle": "Peek Pro Demo Request verifies user is taken to the demo form",
+              "timedOut": null,
+              "duration": 9929,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//visit peek.com\ncy.visit('http://peek.com'); //click on Learn more\ncy.get('#peek-pro > :nth-child(2) > .col-lg-3 > .section-cta').click(); //verify url contains peek.com/pro\ncy.url().should('contain', '/pro/'); //click on get started and verify request free demo form shows up\ncy.get('#menu-new-main-menu > #menu-item-15110 > a').click(); //check if the user has landed on the right page\ncy.url().should('contain', '/pro/get-started');\ncy.get('.et_pb_code_inner > h2').should('contain', 'Request Free Demo\\n');",
+              "err": {},
+              "uuid": "e8d0657e-583c-41db-bcd2-66c3aac9a144",
+              "parentUUID": "c3f0ec86-895c-44a5-abe4-7602af9d7bff",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e8d0657e-583c-41db-bcd2-66c3aac9a144"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9929,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

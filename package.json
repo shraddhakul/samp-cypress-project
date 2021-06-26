@@ -1,0 +1,32 @@
+{
+  "name": "peek",
+  "version": "1.0.0",
+  "description": "Test project for Peek interview",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:dashboard": "cypress run -- record --key 17ae33b0-8d62-4894-ab70-992bf2d819a0"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shraddhakul/samp-cypress-project.git"
+  },
+  "keywords": [
+    "Cypress"
+  ],
+  "author": "Shraddha Kulkarni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shraddhakul/samp-cypress-project/issues"
+  },
+  "homepage": "https://github.com/shraddhakul/samp-cypress-project#readme",
+  "devDependencies": {
+    "cypress": "^7.6.0",
+    "mocha": "^9.0.1",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}
